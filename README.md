@@ -1,4 +1,4 @@
-# Proyecto Héroes
+# Proyecto Héroes TS
 
 Este proyecto es un carrusel de imágenes de héroes, donde cada héroe tiene habilidades representadas por barras de porcentaje. Los usuarios pueden mejorar estas habilidades utilizando monedas, que tienen un precio asociado. El proyecto está implementado en JavaScript puro con TypeScript encima para el tipado de datos, interfaces y funciones.
 
