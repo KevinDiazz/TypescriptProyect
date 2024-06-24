@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pagina.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedan+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">Selecciona tu Héroe</h1>
+    <div id="containerHero">
+      <div class="containerHero">
+        <button class="buttonHeroBack">
+          <img class="arrowIcon" src="../src/img/icons8-back-50.png" />
+        </button>
+        <img
+          class="heroImg"
+          data-id="0"
+          data-name="hulk"
+          src="../src/img/pngegg (19).png"
+        />
+        <img
+          class="heroImg"
+          data-id="1"
+          data-name="ironman"
+          src="../src/img/pngegg (20).png"
+        />
+        <img
+          class="heroImg"
+          data-id=""
+          data-name="thor"
+          src="../src/img/pngegg (21).png"
+        />
+        <button class="buttonHeroNext">
+          <img class="arrowIcon" src="../src/img/icons8-forward-50.png" />
+        </button>
+      </div>
+      <div class="habilities">
+        <div class="coins">
+          <h2 class="nameOfHero">hulk</h2>
+          <div class="numberOfCoins" data-totalcoins="200">
+            200<img
+              class="coinsImg"
+              style="margin-left: 10px; width: 30%; height: 30px"
+              src="../src/img/pngegg (22).png"
+            />
+          </div>
+        </div>
+        <h3>Habilidades</h3>
+        <p>Fuerza</p>
+        <div class="progress-bar">
+          <div
+            class="progress-value"
+            data-name="force"
+            style="width: 80%"
+          ></div>
+        </div>
+        <p>Velocidad</p>
+        <div class="progress-bar">
+          <div
+            class="progress-value"
+            data-name="velocity"
+            style="width: 40%"
+          ></div>
+        </div>
+        <p>Ataque</p>
+        <div class="progress-bar">
+          <div
+            class="progress-value"
+            data-name="stroke"
+            style="width: 80%"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="upgradeHabilities">
+      <div
+        class="upgradePrices"
+        data-habilities='{"price": 30, "plus": "20", "habilitie": "force"}'
+      >
+        <div class="PriceOfUpgrade">
+          30
+          <img
+            style="margin-left: 10px; width: 50%; height: 30px"
+            src="../src/img/pngegg (22).png"
+          />
+        </div>
+        <p>+20% Fuerza</p>
+      </div>
+      <div
+        class="upgradePrices"
+        data-habilities='{"price":100,"plus":"20","habilitie":"velocity"}'
+      >
+        <div class="PriceOfUpgrade">
+          100
+          <img
+            style="margin-left: 10px; width: 50%; height: 30px"
+            src="../src/img/pngegg (22).png"
+          />
+        </div>
+        <p>+20% Velocidad</p>
+      </div>
+      <div
+        class="upgradePrices"
+        data-habilities='{"price": 50, "plus": "20", "habilitie": "stroke"}'
+      >
+        <div class="PriceOfUpgrade">
+          50
+          <img
+            style="margin-left: 10px; width: 50%; height: 30px"
+            src="../src/img/pngegg (22).png"
+          />
+        </div>
+        <p>+25% Ataque</p>
+      </div>
+    </div>
+    <div class="blur-background" id="blurBackground"></div>
+    <div class="insufficientCoins">
+      <div class="closeDiv">x</div>
+      <div class="infoText">
+        <div>
+          dinero insuficiente<br />
+          Obtenga más monedas para mejorar a su héroe
+        </div>
+      </div>
+    </div>
+    <script src="practica.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",               // Objetivo de la versión de JavaScript
+    "module": "commonjs",          // Sistema de módulos
+    "outDir": "./dist",            // Directorio de salida para los archivos .js
+    "rootDir": "./src",            // Directorio de entrada para los archivos .ts
+    "strict": true,                // Habilitar todas las verificaciones de tipo
+    "esModuleInterop": true,       // Habilitar interoperabilidad con módulos ES
+    "forceConsistentCasingInFileNames": true // Forzar consistencia en mayúsculas y minúsculas
+  },
+  "include": [
+    "src/**/*.ts"                  // Incluir todos los archivos .ts en el directorio src
+  ]
+}
